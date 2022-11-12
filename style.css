@@ -1,0 +1,105 @@
+body{
+    background: #f9f9f9;
+    
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;padding: 0;
+    border: none;outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+:root{
+    --red: #ff3838;
+}
+
+::selection{
+    background: var(--red);
+    color: #fff;
+}
+
+section{
+    min-height: 100vh;
+}
+
+.container{
+    padding: 30px 9%;
+}
+
+.title h2{
+    color: #333;
+    font-size: 55px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.title span{
+    color: var(--red);
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ==== speciality section area ==== */
+
+.speciality .box-container .box{
+    flex: 1 1 40rem;
+    margin: 16px;
+    background: #fff;
+    border-radius: 8px;
+    border: .1rem solid rgba(0,0,0,.3);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.speciality .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.speciality .box-container .box:hover .image img{
+    top: 0;
+    left: 0;
+}
+
+.speciality .box-container .box .contant{
+    text-align: center;
+    padding: 30px;
+}
+
+.speciality .box-container .box .contant img{
+    margin: 1.5rem;
+}
+
+.speciality .box-container .box .contant h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.speciality .box-container .box .contant p{
+    font-size: 1.7rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+
+/* ==== speciality section area ==== */
